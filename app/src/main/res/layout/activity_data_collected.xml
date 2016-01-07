@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="horizontal"
+    tools:context="com.mboyaa.datacollect.DataCollectedActivity">
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FilterSpinner" />
+
+    <ListView
+        android:id="@+id/listz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:layout_below="@id/FilterSpinner"
+        android:divider="#030303" />
+</RelativeLayout>
