@@ -17,6 +17,8 @@ import DatabaseHelper.DatabaseHandler;
 
 public class DashBoardActivity extends AppCompatActivity {
     private Button NewRecordBtn;
+    private Button CasesBtn;
+    private Button AddNamesBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,8 @@ public class DashBoardActivity extends AppCompatActivity {
 
 
         NewRecordBtn = (Button)findViewById(R.id.ViewDataBtn);
+        CasesBtn = (Button)findViewById(R.id.CasesBtn);
+        AddNamesBtn = (Button)findViewById(R.id.addNamesBtn);
 
         NewRecordBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,5 +38,23 @@ public class DashBoardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        CasesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CasesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        AddNamesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AddNewName.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

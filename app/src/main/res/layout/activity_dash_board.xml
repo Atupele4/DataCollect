@@ -8,8 +8,20 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="View Collected Data"
+        android:text="View PAP Data"
         android:id="@+id/ViewDataBtn"
         android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View Cases Data"
+        android:id="@+id/CasesBtn" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Names"
+        android:id="@+id/addNamesBtn" />
 
 </LinearLayout>
